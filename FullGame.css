@@ -1,0 +1,103 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0; padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #D8C2FF; /* pastel purple */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+#app {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #b39ddb55;
+  padding: 32px 24px 24px 24px;
+  min-height: 500px;
+}
+h1 {
+  text-align: center;
+  color: #6C3483;
+  margin-bottom: 24px;
+}
+.topic-button {
+  font-size: 1.2rem;
+  margin: 8px 8px 16px 0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #6C3483;
+  background: #E8DAEF;
+  color: #6C3483;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.topic-button:hover, .topic-button:focus {
+  background: #D2B4DE;
+  color: #fff;
+}
+#quiz-container {
+  margin-top: 24px;
+  flex-direction: column;
+  align-items: stretch;
+}
+#question-box {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.answer-option {
+  font-size: 1.1rem;
+  padding: 10px 18px;
+  border-radius: 7px;
+  border: 2px solid #BB8FCE;
+  background: #F5EEF8;
+  color: #6C3483;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.answer-option:hover, .answer-option:focus {
+  background: #D2B4DE;
+  color: #fff;
+}
+.answer-option.correct {
+  background: #A9DFBF !important;
+  border-color: #229954 !important;
+  color: #229954 !important;
+}
+.answer-option.incorrect {
+  background: #F5B7B1 !important;
+  border-color: #C0392B !important;
+  color: #C0392B !important;
+}
+#score-screen {
+  margin-top: 32px;
+  text-align: center;
+}
+#score-details {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+#wrong-answers-list {
+  text-align: left;
+  margin: 0 auto 18px auto;
+  max-width: 600px;
+  padding-left: 18px;
+}
+footer {
+  margin: 32px auto 0 auto;
+  text-align: center;
+  color: #6C3483;
+  font-size: 1rem;
+  padding-bottom: 16px;
+}

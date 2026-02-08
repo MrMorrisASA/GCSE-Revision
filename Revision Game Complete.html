@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edexcel GCSE History Revision Quiz</title>
+  <link rel="stylesheet" href="FullGame.css">
+</head>
+<body>
+<div id="app">
+  <button id="home-btn" style="display:none; position:absolute; top:30px; left:30px; font-size:1.2rem; padding:8px 18px; border-radius:8px; background:#fff; border:2px solid #8e44ad; color:#8e44ad; cursor:pointer; z-index:10;">Home</button>
+  <h1>Edexcel GCSE History Revision Quiz</h1>
+  <section id="topic-select" aria-label="Select quiz topic">
+    <button class="topic-button" data-topic="medicine">Medicine Through Time</button>
+    <button class="topic-button" data-topic="elizabethan">Early Elizabethan England</button>
+    <button class="topic-button" data-topic="coldwar">Superpower Relations & Cold War</button>
+    <button class="topic-button" data-topic="weimar">Weimar & Nazi Germany</button>
+    <button class="topic-button" data-topic="full">FULL GCSE Revision (All Topics)</button>
+  </section>
+
+  <section id="quiz-container" aria-live="polite" style="display:none;">
+    <div id="question-box" tabindex="0"></div>
+    <div id="answers" role="list"></div>
+  </section>
+
+  <section id="score-screen" aria-live="polite" style="display:none;">
+    <h2>Your Score</h2>
+    <div id="score-details"></div>
+    <ul id="wrong-answers-list"></ul>
+    <button id="restart-btn" style="font-size:1.6rem; padding:10px 20px; border-radius:10px; background:#FFB347; border:3px solid #C47F00; cursor:pointer; margin-top:20px;">Restart Quiz</button>
+  </section>
+</div>
+
+<footer>
+  Created to help you recall knowledge for all GCSE History topics.
+</footer>
+<script src="src/questionBank.js"></script>
+<script src="src/FullGame.js"></script>
+</body>
+</html>
